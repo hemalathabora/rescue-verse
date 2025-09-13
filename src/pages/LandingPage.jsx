@@ -5,10 +5,6 @@ import {
   FaFacebook,
   FaTwitter,
   FaInstagram,
-  FaUserShield,
-  FaGlobeAsia,
-  FaHandsHelping,
-  FaBolt,
 } from "react-icons/fa";
 
 // Helper to get reported disasters from localStorage
@@ -397,64 +393,76 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 sm:py-12 bg-black">
-        <div className="max-w-7xl mx-auto px-2 sm:px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">
-                <span className="bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
-                  RescueVerse
-                </span>
-              </h3>
-              <p className="text-gray-400 text-xs sm:text-base">
-                © 2025 RescueVerse. Saving lives through technology.
-              </p>
-            </div>
+     {/* Footer */}
+<footer className="py-8 sm:py-12 bg-black">
+  <div className="max-w-7xl mx-auto px-2 sm:px-6">
+    <div className="flex flex-col md:flex-row justify-between items-center">
+      <div className="mb-4 md:mb-0">
+        <h3 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">
+          <span className="bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
+            RescueVerse
+          </span>
+        </h3>
+        <p className="text-gray-400 text-xs sm:text-base">
+          © 2025 RescueVerse. Saving lives through technology.
+        </p>
+      </div>
 
-            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-8">
-              <div className="flex space-x-4">
-                <a
-                  href="#"
-                  role="button"
-                  aria-label="Facebook"
-                  className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
-                >
-                  <FaFacebook />
-                </a>
-                <a
-                  href="#"
-                  role="button"
-                  aria-label="Twitter"
-                  className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href="#"
-                  role="button"
-                  aria-label="Instagram"
-                  className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
-                >
-                  <FaInstagram />
-                </a>
-              </div>
-
-              <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm">
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  About
-                </Link>
-                <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  Privacy
-                </Link>
-                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  Contact
-                </Link>
-              </div>
-            </div>
-          </div>
+      <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-8">
+        {/* Social Icons */}
+        <div className="flex space-x-4">
+          <a
+            href="javascript:void(0)"
+            role="button"
+            aria-label="Facebook"
+            className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="javascript:void(0)"
+            role="button"
+            aria-label="Twitter"
+            className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="javascript:void(0)"
+            role="button"
+            aria-label="Instagram"
+            className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
+          >
+            <FaInstagram />
+          </a>
         </div>
-      </footer>
+
+        {/* Footer Links */}
+        <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm">
+          <Link
+            to="/about"
+            className="text-gray-400 hover:text-white transition-colors duration-300"
+          >
+            About
+          </Link>
+          <Link
+            to="/privacy"
+            className="text-gray-400 hover:text-white transition-colors duration-300"
+          >
+            Privacy
+          </Link>
+          <Link
+            to="/contact"
+            className="text-gray-400 hover:text-white transition-colors duration-300"
+          >
+            Contact
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
       {/* Custom Styles */}
       <style>
