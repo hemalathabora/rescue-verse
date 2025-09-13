@@ -414,58 +414,52 @@ const LandingPage = () => {
 
       <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-8">
         {/* Social Icons */}
-        <div className="flex space-x-4">
-          <a
-            href="javascript:void(0)"
-            role="button"
-            aria-label="Facebook"
-            className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            href="javascript:void(0)"
-            role="button"
-            aria-label="Twitter"
-            className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href="javascript:void(0)"
-            role="button"
-            aria-label="Instagram"
-            className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
-          >
-            <FaInstagram />
-          </a>
-        </div>
+              <div className="flex space-x-4">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                  className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="text-gray-400 hover:text-violet-400 transition-colors duration-300 text-xl transform hover:scale-110"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
 
-        {/* Footer Links */}
-        <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm">
-          <Link
-            to="/about"
-            className="text-gray-400 hover:text-white transition-colors duration-300"
-          >
-            About
-          </Link>
-          <Link
-            to="/privacy"
-            className="text-gray-400 hover:text-white transition-colors duration-300"
-          >
-            Privacy
-          </Link>
-          <Link
-            to="/contact"
-            className="text-gray-400 hover:text-white transition-colors duration-300"
-          >
-            Contact
-          </Link>
+              {/* Footer Links */}
+              <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm">
+                <Link to="/about" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  About
+                </Link>
+                <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  Privacy
+                </Link>
+                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors duration-300">
+                  Contact
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
+      </footer>
 
 
       {/* Custom Styles */}
