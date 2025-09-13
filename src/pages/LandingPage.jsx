@@ -5,6 +5,8 @@ import {
   FaFacebook,
   FaTwitter,
   FaInstagram,
+  FaUserShield,
+  FaGlobeAsia,
   FaHandsHelping,
   FaBolt,
 } from "react-icons/fa";
