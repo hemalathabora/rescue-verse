@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  FaUserShield,
-  FaGlobeAsia,
-  FaHandsHelping,
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaBolt,
-} from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 // Helper to get reported disasters from localStorage
 function getReportedDisasters() {
@@ -132,9 +124,7 @@ const LandingPage = () => {
 
       {/* Marquee replacement */}
       {reportedDisasters.length > 0 && (
-        <div
-          className="w-full py-2 overflow-hidden bg-gradient-to-r from-gray-900 to-blue-800"
-        >
+        <div className="w-full py-2 overflow-hidden bg-gradient-to-r from-gray-900 to-blue-800">
           <div className="flex whitespace-nowrap animate-marquee text-white text-sm sm:text-base font-semibold tracking-wide">
             {reportedDisasters.map((d, idx) => (
               <span key={idx} className="mx-8 flex items-center">
@@ -148,8 +138,6 @@ const LandingPage = () => {
           </div>
         </div>
       )}
-
-      {/* ... rest of your sections (Live Updates, Mission, etc.) remain unchanged ... */}
 
       {/* Footer */}
       <footer className="py-8 sm:py-12 bg-black">
@@ -195,13 +183,22 @@ const LandingPage = () => {
               </div>
 
               <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm">
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <Link
+                  to="/about"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   About
                 </Link>
-                <Link to="/privacy" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <Link
+                  to="/privacy"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Privacy
                 </Link>
-                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors duration-300">
+                <Link
+                  to="/contact"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
                   Contact
                 </Link>
               </div>
