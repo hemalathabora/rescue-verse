@@ -9,29 +9,30 @@ function getReportedDisasters() {
 }
 
 const LandingPage = () => {
-  const [updates, setUpdates] = useState([
-    {
-      id: 1,
-      icon: "⚠️",
-      text: "Flood Alert in Mumbai - Heavy rainfall expected, evacuations in progress.",
-      time: "5 mins ago",
-      severity: "high",
-    },
-    {
-      id: 2,
-      icon: "🔥",
-      text: "Wildfire near California spreading fast, volunteers requested.",
-      time: "12 mins ago",
-      severity: "high",
-    },
-    {
-      id: 3,
-      icon: "🌪️",
-      text: "Cyclone warning issued for Odisha coastline, stay alert.",
-      time: "25 mins ago",
-      severity: "medium",
-    },
-  ]);
+  const [updates] = useState([
+  {
+    id: 1,
+    icon: "⚠️",
+    text: "Flood Alert in Mumbai - Heavy rainfall expected, evacuations in progress.",
+    time: "5 mins ago",
+    severity: "high",
+  },
+  {
+    id: 2,
+    icon: "🔥",
+    text: "Wildfire near California spreading fast, volunteers requested.",
+    time: "12 mins ago",
+    severity: "high",
+  },
+  {
+    id: 3,
+    icon: "🌪️",
+    text: "Cyclone warning issued for Odisha coastline, stay alert.",
+    time: "25 mins ago",
+    severity: "medium",
+  },
+]);
+
   const [currentUpdate, setCurrentUpdate] = useState(0);
   const [reportedDisasters, setReportedDisasters] = useState([]);
 
