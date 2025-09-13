@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Login() {
   const [form, setForm] = useState({ email: "", password: "", role: "victim" });
@@ -78,7 +78,7 @@ function Login() {
                 checked={form.role === "victim"}
                 onChange={handleChange}
                 className="text-indigo-500 focus:ring-indigo-400 border-gray-600"
-              />{" "}
+              />
               Victim
             </label>
             <label className="flex items-center gap-2 text-gray-300 font-medium">
@@ -89,7 +89,7 @@ function Login() {
                 checked={form.role === "volunteer"}
                 onChange={handleChange}
                 className="text-indigo-500 focus:ring-indigo-400 border-gray-600"
-              />{" "}
+              />
               Volunteer
             </label>
           </div>
@@ -106,12 +106,12 @@ function Login() {
         {/* Forgot Password */}
         <div className="mt-6 text-center text-sm text-gray-400">
           Forgot your password?{" "}
-          <a
-            href="#"
+          <Link
+            to="/reset-password"
             className="text-indigo-400 font-semibold hover:underline"
           >
             Reset
-          </a>
+          </Link>
         </div>
       </div>
     </div>
