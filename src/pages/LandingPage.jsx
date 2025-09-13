@@ -5,6 +5,8 @@ import {
   FaFacebook,
   FaTwitter,
   FaInstagram,
+  FaHandsHelping,
+  FaBolt,
 } from "react-icons/fa";
 
 // Helper to get reported disasters from localStorage
