@@ -1,4 +1,4 @@
 [build]
   publish = "build"
   command = "npm run build"
-  node_version = "18"
+  node_version = "20.19.3"
